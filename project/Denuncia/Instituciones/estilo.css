@@ -1,0 +1,30 @@
+.panel{
+    font-size:11px;
+    border:1px solid silver;
+    padding:10px
+}
+
+#lstInstituciones{
+    height: 400px;
+    width:calc(100% - 10px);
+    border:1px solid silver;
+    padding:5px
+}
+
+#instDescripcion{
+    height:50px;
+    width:calc(100% - 10px)
+}
+
+#instWeb{
+    width:calc(100% - 10px)
+}
+
+.itemInstitucion{
+    padding:5px;
+    border:1px solid silver;
+}
+
+.itemInstitucion:hover{
+    background-color: silver;
+}

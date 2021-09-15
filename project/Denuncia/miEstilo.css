@@ -1,0 +1,103 @@
+input:focus, textarea:focus{
+    border:1px solid rgb(80, 80, 221);
+}
+
+
+.itemToolBar{
+    display:inline-block;
+}
+
+#jap_titulo{
+    text-align:left;
+    background-color: #006bcb;
+    /*padding-left:50px*/
+}
+
+/****/
+
+.row{
+    margin:0px;
+    padding:0px
+}
+
+.itemToolBar{
+    padding:10px;
+    font-size:11px;
+    cursor:pointer;
+}
+.itemToolBar:hover{
+    background-color: silver;
+    color:black;
+}
+.itemToolBar.sel{
+    background-color: rgb(236, 236, 236);
+    color:black
+}
+
+
+#casos{
+    background-color: white!important;
+    padding:5px;
+    margin-top:10px;
+    position:relative;
+}
+
+#casos>#pagina{
+    margin-top:15px;
+    padding:5px;
+    font-size:11px
+}
+#casos>#pagina>.itemCaso{
+    padding:5px;
+    position:relative;
+    border:1px solid rgb(226, 225, 225);
+    margin-bottom:1px
+}
+#casos>#pagina>.itemCaso:hover{
+    background-color: #ececec;
+    cursor:pointer;
+
+}
+#casos>#pagina>.itemCaso>span{
+    font-size:9px;
+    display:inline-block;
+    position:absolute;
+    color:gray
+}
+#casos>#pagina>.itemCaso>span:nth-child(2){
+    right:5px
+}
+
+#fndCaso{
+    font-size:11px;
+    width:50%;
+}
+#btnBuscaCaso{
+    font-size:11px;
+}
+#btnNuevoCaso{
+    font-size:11px;
+    position:absolute;
+    right:10px;
+}
+
+#info{
+    background-color: rgb(236, 236, 236)!important;
+    padding:10px;
+    font-size:11px
+}
+
+#asistenteCaso *{
+    font-size:11px
+}
+
+#asistenteCaptura{
+    padding:10px;
+    border-left:1px solid gray;
+
+}
+
+#mapid { 
+    height: 400px;
+    width:400px 
+}

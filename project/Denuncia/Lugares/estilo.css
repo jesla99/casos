@@ -1,0 +1,38 @@
+#panelLugares{
+    overflow:auto;
+    height:550px
+}
+
+.itemTipo{
+    padding-left:20px;
+    font-size:11px;
+    border-left:1px dotted silver;
+    position:relative;
+}
+
+.itemTipoItem>div{
+    font-size:9px;
+    display:none;
+    position:absolute;
+    right:0px;
+    top:0px
+}
+
+.itemTipoItem{
+    padding:5px;
+    display:inline-block;
+    cursor:pointer;
+    width:calc(100% - 10px)
+}
+
+
+.itemTipoItem:hover{
+    background-color:rgb(228, 228, 228);
+}
+
+.itemTipoItem:hover>div{
+    display:inline-block;
+    background-color: white;
+    padding:2px;
+    color:red
+}

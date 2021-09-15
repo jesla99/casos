@@ -1,0 +1,93 @@
+#panelTipologia{
+    border:1px solid silver;
+    height:75vh;
+    padding: 5px;
+}
+
+#inpCategoria{
+    font-size:11px;
+    width: calc(100% - 80px);
+}
+
+#btnNewCategoria{
+    font-size:11px
+}
+
+#lstTipologia{
+    margin:5px;
+    height:calc(100% - 50px);
+    overflow:auto;
+}
+
+#descripcionCategoria{
+    border:1px solid silver;
+    height:220px
+}
+
+#camposCategoria{
+    border:1px solid silver;
+    height:220px
+}
+
+.itemTipo{
+    padding-left:20px;
+    font-size:11px;
+    border-left:1px dotted silver;
+    position:relative;
+}
+
+.itemTipoItem>div{
+    font-size:9px;
+    display:none;
+    position:absolute;
+    right:0px;
+    top:0px
+}
+
+.itemTipoItem{
+    padding:5px;
+    display:inline-block;
+    cursor:pointer;
+    width:calc(100% - 10px)
+}
+
+
+.itemTipoItem:hover{
+    background-color:rgb(228, 228, 228);
+}
+
+.itemTipoItem:hover>div{
+    display:inline-block;
+    background-color: white;
+    padding:2px;
+    color:red
+}
+
+#editCategoria{
+    font-size:11px
+}
+
+#frmHijo{
+    text-align: center;
+}
+
+#inpHijo{
+    width:100%;
+    margin-top:20px;
+    margin-bottom:20px
+}
+
+#frmHijo>h3{
+    margin-bottom:60px
+}
+#camposCategoria > div{
+    padding:4px;
+    border:1px solid silver;
+}
+#camposCategoria > div:hover{
+    background-color: silver;
+}
+#categoriaDescripcion{
+    height:170px;
+    width:calc(100% - 10px);
+}

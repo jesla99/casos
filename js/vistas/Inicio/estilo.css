@@ -1,0 +1,9 @@
+/**NOTA:
+    Para evitar que el CSS de esta vista afecte al resto de vistas utilizar el prefijo #jap_cont_Inicio
+    no emplear este prefijo proboca que el estilo por defecto de la app.
+
+    Si no se desea utilizar estilo, debe crear un archivo estilo.css vacio para evitar errores en 
+    la consola del navegador
+*/
+
+/*#jap_cont_Inicio{} /*contenedor de la vista*/

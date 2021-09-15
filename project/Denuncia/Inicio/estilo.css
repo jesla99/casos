@@ -1,0 +1,9 @@
+#homeScreen{
+    background-color: rgb(223, 223, 223);
+    border:1px solid gray;
+    height:500px;
+    margin-top:50px;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+}

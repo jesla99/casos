@@ -1,0 +1,175 @@
+.itemBandeja{
+    cursor:pointer;
+    padding:5px;
+}
+.itemBandeja>h4{
+    padding:0px;
+    margin:0px;
+}
+.itemBandeja:hover{
+    background-color: silver;
+}
+.itemBandeja.sel{
+    background-color: rgb(236, 236, 236);
+    color:black
+}
+
+#bandejas{
+    position:relative;
+    font-size:11px;
+    background-color: #ececec!important;
+}
+
+#btNwBandeja{
+    position:absolute;
+    cursor:pointer;
+    font-size:11px;
+    right:5px;
+    top:0px;
+}
+
+
+#findCaso{
+    width:calc(100% - 150px)
+}
+
+#bandejas,#casos,#info{
+    height:calc(100vh - 80px);
+}
+
+#bandejas{
+    background-color: white;
+}
+#casos{
+    background-color: papayawhip;
+}
+#info{
+    background-color: white;
+}
+
+#jap_cuerpo,#jap_Inicio{
+    padding:0px!important;
+    margin:0px!important
+}
+
+#asistenteCaptura > .arbol{
+    height:40%;
+    overflow:auto;
+}
+#asistenteCaptura > .arbolToolTip{
+    top:60%
+}
+
+#japArbol{
+    width:calc(100% - 50px)
+}
+
+.arbolRama>span{
+    display:block;
+    padding:5px;
+}
+.arbolRama>span:hover{
+    background-color: yellow;
+}
+
+.campo{
+    padding:10px
+}
+
+.itemInstitucion,
+.itemTipo{
+    padding:5px;
+    cursor:pointer;
+} 
+.itemInstitucion:hover,
+.itemTipo:hover{
+    background-color: silver;
+}
+
+#casoInst,
+#casoTipo{
+    border:1px solid silver;
+    margin-bottom:10px;
+    height:75px;
+    background-color: white;
+    overflow:auto;
+}
+
+select#semaforo option[value="0"] {
+    background: green!important;
+    color:white
+}
+select#semaforo option[value="1"] {
+    background: yellow!important;
+    color:black;
+}
+
+select#semaforo option[value="2"] {
+    background: orange!important;
+    color:white;
+}
+
+select#semaforo option[value="3"] {
+    background: red!important;
+    color:white;
+}
+
+#btAdComentario{
+    position:absolute;
+
+}
+
+#nwComentario{
+    width:calc(100% - 60px);
+    height:50px
+}
+
+.itemHisto{
+    border:1px solid silver;
+    padding:10px;
+    padding-top:20px;
+    position:relative;
+    font-size:12px
+}
+
+.itemHisto:hover{
+    background-color:silver
+}
+
+.itemHisto>span{
+    position:absolute;
+    top:5px;
+    right:5px;
+    font-size:8px;
+    color:gray;
+}
+
+.itemHisto>a{
+    position:absolute;
+    top:5px;
+    left:5px;
+    font-size:11px;
+    color:gray
+}
+
+#winCrearCaso{
+    text-align:center;
+    width:350px;
+    margin:auto auto;
+    padding:10px;
+    border:1px solid gray
+}
+
+#winCrearCaso p{
+    font-size:12px;
+    margin-bottom:25px   
+}
+
+#nwCliente,
+#nwContacto,
+#nwDescripcion{
+    width:calc(100% - 30px)
+}
+#nwDescripcion{
+    height:100px
+}

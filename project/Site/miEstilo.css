@@ -1,0 +1,35 @@
+#jap_titulo{
+    background-color: #006bcb;
+}
+
+#jap_task{
+    display:none;
+}
+
+#cuerpoImg{
+    width:100%
+}
+
+.columna{
+    width:calc(50% - 12px);
+    padding:5px;
+    border:0px;
+    display:inline-block;
+    vertical-align:top;
+    top:0px
+}
+
+#logoImg, #titulo{
+    display:inline-block;
+    vertical-align: top;
+}
+
+#logoImg{
+    width:150px
+}
+
+#titulo{
+    width:calc(100% - 175px);
+    margin-left:20px;
+    padding-top:30px;
+}

@@ -1,0 +1,52 @@
+Laboratorios old Query Marzo 2021
+
+OLD BLACK
+SELECT    Estadistica_Vta_Dia_Articulo.Suc_Id,    convert(NVARCHAR, Estadistica_Vta_Dia_Articulo.Fecha_Id, 103) as Fecha,    Sucursal.Suc_Nombre,    Estadistica_Vta_Dia_Articulo.Articulo_Id,    Articulo.Articulo_Nombre,    Articulo.Casa_Id,    Casa.Casa_Nombre,    Estadistica_Vta_Dia_Articulo.Estadistica_Cantidad_Lineas AS Cantidad,    (       Estadistica_Vta_Dia_Articulo.Estadistica_Precio + Estadistica_Vta_Dia_Articulo.Estadistica_Impuesto - Estadistica_Vta_Dia_Articulo.Estadistica_Descuento    )    as Precio_Publico  FROM    Estadistica_Vta_Dia_Articulo with(nolock)     INNER JOIN       Articulo with(nolock)        on (Articulo.Articulo_Id = Estadistica_Vta_Dia_Articulo.Articulo_Id        and articulo.emp_id = Estadistica_Vta_Dia_Articulo.emp_id)     INNER JOIN       Casa with(nolock)        on (Casa.Casa_Id = Articulo.Casa_Id        and casa.emp_id = Estadistica_Vta_Dia_Articulo.emp_id)     INNER JOIN       Sucursal with(nolock)        on (Sucursal.Suc_Id = Estadistica_Vta_Dia_Articulo.Suc_Id        and sucursal.emp_id = Estadistica_Vta_Dia_Articulo.emp_id)  WHERE    Estadistica_Vta_Dia_Articulo.Bodega_Id = 1     AND cast(Estadistica_Vta_Dia_Articulo.Fecha_Id as DATE) between '#Desde' and '#Hasta'     AND Casa.Casa_Id in     (        #Casa_Id    )    AND sucursal.Suc_id not in     (       251,252,254,255,260,286    ) ORDER BY    Estadistica_Vta_Dia_Articulo.Suc_Id
+
+OLD PLATINIMUN
+SELECT
+    Estadistica_Vta_Dia_Articulo.Suc_Id,
+    convert(NVARCHAR, Estadistica_Vta_Dia_Articulo.Fecha_Id, 103) as Fecha,
+    Sucursal.Suc_Nombre,
+    Estadistica_Vta_Dia_Articulo.Articulo_Id,
+    Articulo.Articulo_Nombre,
+    Articulo.Casa_Id,
+    Casa.Casa_Nombre,
+    Estadistica_Vta_Dia_Articulo.Estadistica_Cantidad_Lineas AS Cantidad
+FROM    
+    Estadistica_Vta_Dia_Articulo     
+    INNER JOIN Articulo  on Articulo.Articulo_Id = Estadistica_Vta_Dia_Articulo.Articulo_Id 
+    INNER JOIN Casa on Casa.Casa_Id = Articulo.Casa_Id  
+    INNER JOIN Sucursal on Sucursal.Suc_Id = Estadistica_Vta_Dia_Articulo.Suc_Id
+WHERE 
+    Estadistica_Vta_Dia_Articulo.Bodega_Id = 1
+    AND cast(Estadistica_Vta_Dia_Articulo.Fecha_Id as DATE) between '#Desde' and '#Hasta'
+    AND Casa.Casa_Id in ( #Casa_Id )
+    AND sucursal.Suc_id not in ( 251,252,254,255,260,286) 
+ORDER BY 
+    Estadistica_Vta_Dia_Articulo.Suc_Id
+
+OLD DORADO
+SELECT
+    Estadistica_Vta_Dia_Articulo.Articulo_Id,
+    Articulo.Articulo_Nombre,
+    casa.casa_id,
+    casa.Casa_Nombre,
+    sum(Estadistica_Vta_Dia_Articulo.Estadistica_Cantidad_Lineas) AS Cantidad
+FROM
+    Estadistica_Vta_Dia_Articulo
+    INNER JOIN Articulo on Articulo.Articulo_Id = Estadistica_Vta_Dia_Articulo.Articulo_Id
+    INNER JOIN Casa on Casa.Casa_Id = Articulo.Casa_Id 
+    INNER JOIN sucursal on sucursal.suc_id = Estadistica_Vta_Dia_Articulo.suc_id
+WHERE
+    Estadistica_Vta_Dia_Articulo.Bodega_Id = 1
+    AND cast(Estadistica_Vta_Dia_Articulo.Fecha_Id as DATE) between '#Desde' and '#Hasta'
+    AND Casa.Casa_Id in ( #Casa_Id )
+    AND sucursal.Suc_id not in ( 251,252,254,255,260,286 ) 
+Group by
+    Estadistica_Vta_Dia_Articulo.Articulo_Id,
+    Articulo.Articulo_Nombre,
+    casa.casa_id,
+    casa.Casa_Nombre
+order by
+    articulo.Articulo_Nombre    

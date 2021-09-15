@@ -1,0 +1,2 @@
+12/7/2021 Agregar la opción useSplash en core.js
+12/7/2021 Agregar japArbol a japUtils.js

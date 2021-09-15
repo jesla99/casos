@@ -1,0 +1,77 @@
+#panelCampos{
+    border: 1px solid silver;
+    position:relative;
+    height:75vh;
+    padding:10px;
+}
+
+#campoModulo{
+    height:75vh;
+    padding:10px;
+    margin-left:2px;
+    border:1px solid silver
+}
+
+#btnNewCampo{
+    position:absolute;
+    right:5px;
+    top:5px;
+    font-size:11px
+}
+
+#lstCampos{
+    font-size:11px;
+    padding-top:20px
+}
+
+#frmModulo *{
+    font-size:11px
+}
+
+#tiposCampo{
+    border:1px solid silver;
+    margin-top:20px;
+    padding:10px;
+    height:60vh;
+    overflow: auto;
+    background-color: silver;
+}
+
+.itemModulo{
+    border:1px solid silver;
+    padding:5px;
+    margin-bottom:2px;
+    background-color: white;
+    position:relative;
+}
+
+.itemModulo>button{
+    position:absolute;
+    right:5px;
+    top:5px;
+    display: none;
+}
+
+.itemModulo:hover>button{
+    display:inline-block
+}
+
+#inpNewCampo{
+    width:calc(100% - 20px);
+    margin-bottom:20px
+}
+
+#lstCampos > .itemCampo{
+    padding:3px;
+    border:1px solid silver;
+    margin-bottom:2px;
+    cursor:pointer;
+}
+
+.itemCampo:hover{
+    background-color: rgb(226, 225, 225);
+}
+
+#descripcionCategoria{
+    width:100%
+}

@@ -1,0 +1,76 @@
+******** JAP 0.0.7
+[ 16 - Marz 2021 ] Se agregan los eventos de ventana alRemplazar y alRemplazado, que normalmente se 
+            agregarn al llamar a construir la ventana o pantalla con la opcion de contruccion remplazar:{ ... }
+
+[ 15 - Marz 2021 ] Cargar ventana o pantalla remplazando funciones del constructor inicial.
+                japp.cargarVentana({ vista:'nombre', remplazar:{
+                    fnd1:()=>{ . . . },
+                    fnd2:()=>{ . . . },
+                    fnd3:()=>{ . . . },
+                }});
+
+[ 05 Marz 2021 ] Funcion jap.filtrar('.elementos')
+
+[ 04-marz 2021 ] Integracion de archivo miconfig.js, que sobreescribira al archivo config principal en el caso de desear 
+                un config propio para mi proyecto.
+
+****** JAP 6
+[ 26 Feb 2021 ]
+    * Se implementa las funciones de core.js:
+        * es(elemento, query)  devolviendo flase o verdadero al comparar el elemento y validar si posee un id o class ya se
+            mandano '.clase', '#id' o simplemente 'id'
+        * buscarOrigen(elemento, query), recorre iterativamente por el DOM hacia el BODY buscando el elemento padre que
+            tiene como contenedor al elemento que se envia, query es '.clase_padre' ó '#id_padre' o 'id_padre'
+        * buscarObjeto(cadena),   devuelve el objeto buscado por '.clase', '#id_objeto' ó 'id_objeto', devielve 
+            falso si el objeto NO existe
+
+[ 18 Febrero 2021 ]
+    * Se implementa propiedad args de la pantalla y ventana ventana.args={} //para recibir parametros
+       durante la invocación de cargarPantalla o cargarVentana: ej: cargarPantalla({vista:'algo', param1:'algo', param2:'algo 2'})
+    * Se implementa el evento lanzar de japp en sustitucion de japp.click, ya que el controlador del evento en realidad lo tiene
+      el DOM, japp solo se encargara de buscar la función dentro del controlador de la ventana que lance el evento.
+
+[ 28 ENE 2021 ]
+    * inicio de implementacion del JDOM, JApp Document Object Model en la clase elemento
+    * Implementacion de carpeta modelos
+    * Se crea la funcion japp.pantalla() para colocar algo en pantalla completa sin ventana...
+    * Se implementa japp.cerrarPantalla()
+    * Estandarizacion de asset/iconos con carpetas 55, 35, 25, 20 e iconos de esas dimensiones cuadrados
+
+---------- Version 0.0.0.4
+[ 27 ENE 2021 ]
+    * Evento alClick en ventana
+    * Evento alEnfocar
+    * Evento alDesenfocar
+    * 
+
+[ 26 ENE 2021 ] 
+    * Opcion para quitar barra de titulo
+    * Colocar fondo de ventana 
+    * Colocar opacidad de ventana
+     
+
+[ 25 ENE 2021 ] 
+    * enviar ventana al frente durante el enfoque
+    * impementacion de la libreria japMenu para crear menus tipo icono
+    * Recolector de basura de css construidos, se aplico un ID a cada style que permite destruirlo al destruir la ventana
+
+
+------------ Version 0.0.0.3
+[ 24 ENE 2021 ] 
+    * Implementación de boton minimizar y evento minimizar
+    * Restringir carga de la misma vista dos veces
+    * Implementación de JApp Menu (Task manager)
+    * Implmentacion de historial y boton atras.
+    * Implementación del boton ubicaciones.
+        0 = fullscreen
+        1 = pantalla (ubicacion por defecto)
+        2 = mitad superior
+        3 = mitad inferior
+    * Implementación de la opcion cerrar aplicación en el JApp menu.
+    * Implemetación de line de notificaciones del sistema.
+    * Implementación de un procesador de instrucciones javascript
+    
+[ 23 ENE 2021 ] Implementacion de botones de accion, estructura para control de eventos  y boton cerrar ventana y evento ventana.alCerrar.
+[ 22 ENE 2021 ] Implementación de cargarVentana y evento ventana.alCargar
+[ 21 ENE 2021 ] Inicio del desarrollo

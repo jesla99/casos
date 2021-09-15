@@ -1,0 +1,103 @@
+FrontEnd
+    * Parte informativa (site)
+    * Registro de casos
+    * Consulta via numero de caso
+    * Reportes
+
+BackEnd
+    * Administrativa (roles, permisos, etc.)
+    * clasificacion de casos
+        * adjuntos
+        * seguimiento Consulta
+        * (opcion a registro de mensajes - red social)
+    * reportes
+
+
+Vistas FrontEnd
+1. Portada
+2. Quienes somos
+3. Contactenos
+4. Informes - Reportes por municipio / departamento
+    4.1 Tipología (Categoria, tipología o subTipología)
+    4.2 Semáforo
+    4.3 Medida implementada
+    4.4 Institución
+
+5. Registro de casos (Asistente)
+    1. Descripcion del problema y fecha suceso
+    2. Lugar de origen
+    3. Nombre y telefono (aclarar privacidad de datos personales) y rol representate
+    (4. que idiomas entiende. opcional)
+    5. Informar de casos y mostrar detalles
+
+Vistas del BackEnd
+1. login
+2. Bandeja de entrada
+3. Crear y editar Bandejas de clasificacion de casos
+4. ventana de edición de caso
+    0. Correlativo (R)
+    1. Colocar nombre de caso.
+    2. tipo de caso (conflicto o violencia)
+    3. Fecha registro (R)
+    4. Fecha inicio del conflicto (R)
+    5. Lugar
+    6. Geo posicion
+    7. Demandante (R)
+    8. contacto con demandante
+    9. Demanda
+    10. Alerta
+    11. Medida implementada
+        11.1 Dialogo
+        11.2 Mediación
+        11.3 Conciliación
+    12. Institucion (f)
+    13. Estado
+5. usuarios
+6. roles y accesos
+7. tipologías 
+    7.1 relacionar atributos
+    7.2 Instituciones
+8. Aldeas (ubicación)
+9. Campos de caso 
+10. Instituciones. 
+
+ - - - - - - 
+Nota 1: Desarrollar limite de campos automático leyendo desde la DB
+
+Nota 2: Attributos del caso
+    1. Rol dentro del conflicto
+    2. Posición dentro del conflicto
+    3. Pertenencia dentro del conflicto
+    4. Funete de poder
+    5. Fuente de información
+        10.1 Primaria
+        10.2 Segundaria
+        10.3 Terciaria
+    6.Rol_actor_id
+        8.1 Representante
+        8.2 Portavoz
+        8.3 Acompañante
+        8.4 Observador
+        8.5 Grupo de Presión
+        8.6 Asesor
+        8.7 Finanancista
+        8.8 Articulador
+        8.9 Otros ___________
+    7. Derechos humanos violentados (f)
+    8. Tipologia (f)
+    9. Actores (f)
+        12.1 nombre
+        12.2 Rol_actor_id
+        12.3 Datos del actor
+        12.4 Adjuntos
+    10. Hechos (f)
+        13.1 nombre
+        13.2 Descripcion
+        13.3 Adjuntos
+    12. relacion con otros casos.
+    13. Mensajes (f) (opcional)
+        14.1 Mensaje
+        14.2 Adjunto
+
+
+Tipología_X_atributos

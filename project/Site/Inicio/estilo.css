@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+*{
+    font-family: 'Questrial', sans-serif;
+}
+#cuerpo{
+    min-height: 60vh;
+}
+#cabeza{
+    min-height: 100px;
+}
+
+#caso{
+    position:fixed;
+    top:50px;
+    right:-50px;
+    width:75px;
+    height:75px;
+    border-radius: 10px 0px 0px 10px;
+    background-color: red;
+    box-shadow: 5px 10px 8px #888888
+}
+
+
+#formulario{
+    width: 400px;
+    height:600px;
+    position:absolute;
+    right:-420px;
+    padding:30px;
+    padding-top:50px;
+    border-radius:10px;
+    border:1px solid silver;
+    background-color: rgb(236, 236, 236);
+}
+
+#formulario>.btn{
+    position:absolute;
+    bottom:20px;
+    right:20px
+} 
+
+#caso:hover{
+    right:0px
+}
+#caso:hover>#formulario{
+    right:30px
+}
+
+#frm_detalle{
+    width:100%;
+    display:block;
+    height:230px;
+}
+
+.itemOp{
+    padding:4px;
+}

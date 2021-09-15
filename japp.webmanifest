@@ -1,0 +1,16 @@
+{
+    "name": "JApp framework Alpha 0.1",
+    "short_name": "JApp A-01",
+    "description": "Framework para aplicaciones pregresivas.",
+    "icons": [
+        {
+            "src": "asset/iconos/icono.png",
+            "sizes": "58x58",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/index.html",
+    "display": "fullscreen",
+    "theme_color": "#B12A34",
+    "background_color": "#B12A34"
+}

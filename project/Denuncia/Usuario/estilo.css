@@ -1,0 +1,76 @@
+#chClave{
+    text-align:center
+}
+
+#chClave>p{
+    font-size:12px;
+    margin-top:55px;
+}
+
+#infUsuario>p,
+#infPermisos>p{
+    font-size:12px
+}
+
+#usPermisos{
+    height:200px;
+    overflow:auto;
+}
+
+#usRoles>div,
+#usPermisos>div{
+    font-size: 11px;
+    padding:5px
+}
+
+#usRoles>div:hover,
+#usPermisos>div:hover{
+    background-color: silver;
+    cursor:pointer
+}
+
+.itemRol,
+.itemPremiso,
+#lstUsuarios>div{
+    font-size:11px;
+    border:1px solid silver;
+    margin:5px;
+    padding:5px;
+    cursor:pointer
+}
+
+.itemRol:hover,
+.itemPremiso:hover,
+#lstUsuarios>div:hover{
+    background-color: silver;
+}
+
+.itemPremiso>h4{
+    padding:5px;
+    margin:3px;
+}
+
+#infPermisos>h4,
+#infRoles>h4{
+    position:relative;
+}
+
+#usPermisos,#usRoles{
+    border:1px solid silver;
+    height:202px;
+}
+#usRoles{
+    margin:5px
+}
+
+.link{
+    font-size:12px;
+    display:inline-block;
+    position:absolute;
+    right:30px
+}
+
+#rolPermisos{
+    height: 400px;
+    overflow:auto
+}
